@@ -80,6 +80,12 @@ public struct APNSPayloadBodyText: Codable {
   var title: String?
   var subtitle: String?
   var body: String
+
+  public init(title: String? = nil, subtitle: String? = nil, body: String) {
+    self.title = title
+    self.subtitle = subtitle
+    self.body = body
+  }
 }
 
 // MARK: - Certificate
